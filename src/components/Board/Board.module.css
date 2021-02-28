@@ -1,0 +1,45 @@
+.Board {
+  display: grid;
+  margin: auto;
+  margin-top: 50px;
+  box-sizing: border-box;
+}
+
+.Board .StatusText {
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #e7e7de;
+  text-transform: uppercase;
+}
+
+.Board .RowsWrapper {
+  box-sizing: border-box;
+  margin: auto;
+}
+
+.Board .RowsWrapper .Row {
+  box-sizing: border-box;
+  float: left;
+  width: auto;
+}
+
+.Board .StartAgain {
+  width: 80px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.Board button {
+  display: inline-block;
+  padding: 9px 20px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background: #00587a;
+  color: #e7e7de;
+  margin: 20px auto;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+}
