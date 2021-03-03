@@ -72,7 +72,6 @@ class Board extends Component {
 
   render() {
     const { turn, winner, replay } = this.state;
-    console.log(this.state)
     if (replay) return <Game />
     let status = `Next player: ${turn}`
     if (winner !== '') {

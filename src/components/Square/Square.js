@@ -5,23 +5,17 @@ class Square extends Component {
   state = {
     clicked: false
   };
-
-  componentWillReceiveProps(nextProps) {
-    if (nextProps.disable === true) {
-      this.setState({ clicked: true });
-    }
-  }
-
+  
   handleClick = () => {
-    if (!this.state.clicked) {
+    if (!this.props.disable) {
       this.setState({ clicked: true })
       this.props.setValue(this.props.row, this.props.col)
     }
   };
 
   render() {
-    const classes = [styles.Square]
 
+    const classes = [styles.Square]
     if (this.props.value) {
       classes.push(styles[this.props.value])
     }
